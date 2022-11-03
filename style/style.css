@@ -6,7 +6,7 @@ box-sizing: border-box;
 }
 
 html {
-    font-size: 14px; /*1rem*/
+    font-size: 16px; /*1rem*/
 }
 
 body {
@@ -16,6 +16,7 @@ body {
 }
 #container {
     max-width: 1000px;
+    width: 95%;
     margin:0 auto;    
 }
 #header{
@@ -24,7 +25,78 @@ body {
 }
 #container #header h1{
     color: white;
-    font-size: 5rem;
-    padding: 10px 40px;
+    font-size: 5.5rem;
+    padding: 80px 60px;
+}
+#nav {
+    width: 19,99999%;
+    float: left;
+}
+#content {
+    width: 79,99999%;
+    float: left;
+    background-color: white;
+    padding: 20px;
+}
 
+#content p{
+    padding-bottom: 15px;
+    line-height: 1.5;
+}
+
+#content h2 {
+padding-bottom: 20px;
+}
+
+#content h2 span{
+    font-size: 3rem;
+    color: white;
+    background-color: green;
+    line-height: 1.5;
+    border-left: 10px solid green;
+    border-right: 10px solid green;
+    box-decoration-break: clone;
+}
+
+#main{
+    background-color: #333030;
+}
+#main::after, p::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+#nav ul{
+    list-style: none;
+    padding: 30px 20px;
+}
+#nav ul li{
+    border-bottom: 1px dashed white;
+}
+#nav a{
+    text-decoration: none;
+    color: white;
+    padding: 15px 0;
+    display: block;
+}
+#nav a:hover{
+    padding-left: 15px;
+    background-color: rgba(255,255,255,.2);
+}
+.jobb {
+    float: right;
+    padding: 0 0 0 10px;
+}
+.bal {
+    float: left;
+    padding: 0 10px 0 0;
+}
+#footer p:first-child{
+    float: left
+}
+#footer p:last-child{
+    float: right;
+}
+#footer{
+    padding: 20px 0
 }
